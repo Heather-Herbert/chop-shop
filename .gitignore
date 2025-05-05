@@ -172,3 +172,9 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Prevent the video, subtitle and temp files being updated by accident
+*.mp4
+*.json
+*.srt
+*.ass
