@@ -24,8 +24,8 @@ fi
 echo "🎞️ Step 2: Burning subtitles into video..."
 
 ffmpeg -i "$INPUT" -vf \
-"subtitles='$SUBS':force_style='FontName=Arial,FontSize=24,PrimaryColour=&H00FFFFFF,BackColour=&H000000FF,\
-BorderStyle=3,Outline=1,Shadow=0,Alignment=2'" \
+"subtitles='$SUBS':force_style='FontName=Arial,FontSize=24,PrimaryColour=&H00FFFFFF,OutlineColour=&H000000FF,\
+BorderStyle=1,Outline=2,Shadow=0,Alignment=2'" \
 -c:a copy "$OUTPUT"
 
 echo "✅ Done! Subtitled video saved to: $OUTPUT"
